@@ -1,0 +1,13 @@
+In this project of spring,
+I use a class Triangle.java whom i instantiate using Spring Beans.
+In DrawingApp, I have main() in which 
+	create BeanFactory through XmlBeanFactory("src\\spring.xml")
+(XmlBeanFactory is deprecated method.
+ And i have to give path of spring.xml under current folder otherwise it search for file in current folder)
+ 
+	it picks spring.xml from src folder
+	by that factory call getBean() with id of class that we give in Bean tag
+	
+	and this gives new Object
+	we catch this in Triangle object and cast it.
+	then we can use this object to call public things of Triangle class.  
