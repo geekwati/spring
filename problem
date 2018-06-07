@@ -1,0 +1,10 @@
+In this first project of spring,
+I use a class HelloWorld.java whom i instantiate using Spring Beans.
+In MainApp, I have main() in which 
+	create ApplicationContext through ClassPathXmlApplicationContext("Beans.xml")
+	it picks Beans.xml from src folder
+	by that context call getBean() with id of class that we give in Bean tag
+	In property tag we also pass value to instance variable message of HelloWorld class.
+	and this gives new Object
+	we catch this in HelloWorld object and cast it.
+	then we can use this object to call public things of HelloWorld class. 
